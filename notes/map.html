@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="links"></div>
+    <div><p> </p></div>
+    <script>
+        // Create a table element
+        const table = document.createElement('table');
+
+        // Define the first row data
+        const row9 = ['- ', '- ', '- ', '- ', '- '];
+        const row8 = ['- ', '- ', '- ', '- ', '- '];
+        const row7 = ['- ', '- ', '- ', '- ', '- '];
+        const row6 = ['- ', '- ', '- ', '- ', '- '];
+        const row5 = ['- ', '- ', '- ', '- ', '- '];
+        const row4 = ['- ', 'A ', 'T?', '- ', '- '];
+        const row3 = ['- ', 'R ', 'A ', '- ', '- '];
+        const row2 = ['- ', 'I ', 'G ', '- ', '- '];
+        const row1 = ['- ', '- ', '- ', 'E ', '- '];
+
+        // Loop to create rows
+        for (let i = 0; i < 9; i++) {
+            const row = document.createElement('tr');
+
+            // Loop to create columns
+            for (let j = 0; j < 5; j++) {
+                const cell = document.createElement('td');
+                
+                // Use row1 data for the first row
+                if (i === 0) {
+                    cell.textContent = row9[j];
+                } if (i === 1) {
+                    cell.textContent = row8[j];
+                } if (i === 2) {
+                    cell.textContent = row7[j];
+                } if (i === 3) {
+                    cell.textContent = row6[j];
+                } if (i === 4) {
+                    cell.textContent = row5[j];
+                } if (i === 5) {
+                    cell.textContent = row4[j];
+                } if (i === 6) {
+                    cell.textContent = row3[j];
+                } if (i === 7) {
+                    cell.textContent = row2[j];
+                } if (i === 8) {
+                    cell.textContent = row1[j];
+                }
+                
+                row.appendChild(cell);
+            }
+
+            // Append the row to the table
+            table.appendChild(row);
+        }
+
+        // Append the table to the body
+        document.body.appendChild(table);
+    </script>
+</body>
+</html>

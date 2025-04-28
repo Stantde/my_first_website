@@ -1,4 +1,4 @@
-const elements = ['index', 'people', 'days', 'rooms'];
+const elements = ['index', 'people', 'days', 'rooms', 'map'];
 
 window.onload = function() {
     const linksContainer = document.getElementById('links');
