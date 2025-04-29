@@ -1,6 +1,6 @@
-const elements = ['index', 'people', 'days', 'rooms', 'map'];
+const elements = ['index', 'people', 'days', 'rooms', 'map', 'questions'];
 
-window.onload = function() {
+window.addEventListener('load', function() {
     const linksContainer = document.getElementById('links');
     elements.forEach(element => {
         const link = document.createElement('a');
@@ -9,18 +9,4 @@ window.onload = function() {
         link.style.display = 'block'; // Display each link on a new line
         linksContainer.appendChild(link);
     });
-};
-
-/*
-//window.onload = function() {
-//    const dayLinksContainer = document.getElementById('day_links');
-//    elements.forEach(element => {
-//       const dayLink = document.createElement('a');
-//        dayLink.href = `${element}.html`;
-//        dayLink.textContent = `Go to Day ${element}`;
-//        dayLink.style.display = 'block'; // Display each link on a new line
-//        dayLinksContainer.appendChild(dayLink);
-//    });
-//
-//};
-*/
+});
