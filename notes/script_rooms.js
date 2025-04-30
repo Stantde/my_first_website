@@ -1,6 +1,6 @@
 const room_elements = ['nook', 'bedroom', 'closet', 'den', 'entrance_hall', 'lavatory', 'pantry',
     'parlor', 'spare_room', 'boiler_room', 'security_room', 'boudoir', 'chapel', 'corridor',
-    'west_wing_hall'
+    'west_wing_hall', 'dining_room', 'kitchen', 'bunk_room', 'grounds', 'private_drive'
 ].sort();
 
 window.addEventListener('load', function() {
