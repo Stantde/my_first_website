@@ -1,6 +1,6 @@
 const room_elements = ['nook', 'bedroom', 'closet', 'den', 'entrance_hall', 'lavatory', 'pantry',
     'parlor', 'spare_room', 'boiler_room', 'security_room', 'boudoir', 'chapel', 'corridor',
-    'west_wing_hall', 'dining_room', 'kitchen', 'bunk_room', 'grounds', 'private_drive'
+    'west_wing_hall', 'dining_room', 'kitchen', 'bunk_room', 'grounds', 'private_drive', 'storeroom'
 ].sort();
 
 window.addEventListener('load', function() {
@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
         room_link.textContent = `${room_element.charAt(0).toUpperCase() + room_element.slice(1)}`;
         room_link.style.display = 'block'; // Display each link on a new line
         room_linksContainer.appendChild(room_link);
-        
+
     });
 }
 );
